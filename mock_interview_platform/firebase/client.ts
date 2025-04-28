@@ -9,13 +9,13 @@ import { getFirestore} from 'firebase/firestore';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBERBYnftoJFhT9l7wOcsN1II7HecbPdD0",
-  authDomain: "prepwise-73cc0.firebaseapp.com",
-  projectId: "prepwise-73cc0",
-  storageBucket: "prepwise-73cc0.firebasestorage.app",
-  messagingSenderId: "501996647176",
-  appId: "1:501996647176:web:f58547985e35bac20332bd",
-  measurementId: "G-4V13B4WBFT"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase

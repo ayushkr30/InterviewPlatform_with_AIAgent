@@ -5,6 +5,9 @@ import Image from "next/image";
 import {dummyInterviews} from "@/constants";
 import InterviewCard from "@/components/InterviewCard";
 
+import { getCurrentUser } from "@/lib/actions/auth.action";
+
+
 const Page = () => {
     return (
         <>
