@@ -11,7 +11,7 @@ import {FormControl, FormDescription, FormItem, FormLabel, FormMessage} from "@/
     type?: 'text' | 'email' | 'password' | 'file'
  }
 
- const FormField = ({ control, name, label, placeholder, type='text'}: FormFieldProps<T>) => (
+ const FormField = <T extends FieldValues>({ control, name, label, placeholder, type='text'}: FormFieldProps<T>) => (
    <Controller 
       control={control}
       name={name}
